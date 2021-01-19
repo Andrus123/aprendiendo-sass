@@ -109,3 +109,34 @@ $wrap: 900px;
     width: $caja / $wrap * 100%;
     margin: 10px;
 }
+
+//CONDICIONALES - IF
+
+
+$color-fondo:orange;
+h1{
+    @if $color-fondo==#ccc {
+        color:black;
+    } @else if $color-fondo == black{
+        color: lightsalmon;
+    } @else{
+        color: pink;
+    }
+}
+
+
+// FOR
+$contador: 1;
+
+@for $contador from 1 through 10{
+
+    .listado ul li:nth-child(#{$contador}) {
+        font-size: $contador + 10px;
+    }
+}
+
+
+// EACH
+
+// WHILE
+
